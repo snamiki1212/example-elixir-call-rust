@@ -10,3 +10,7 @@ iex> Benchee.run(
 ...>   formatters: [{Benchee.Formatters.Console, extended_statistics: true}]
 ...> )
 ```
+
+## REF
+
+- https://simplabs.com/blog/2020/06/25/writing-rust-nifs-for-elixir-with-rustler/
