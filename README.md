@@ -1,5 +1,10 @@
 # ExampleElixirCallRust
 
+```zsh
+$ cd native/fib; cargo build; cd ../../;
+$ mix deps.get
+```
+
 ```elixir
 iex> Benchee.run(
 ...>   %{
