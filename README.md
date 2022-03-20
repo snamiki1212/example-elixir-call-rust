@@ -3,8 +3,8 @@
 ```elixir
 iex> Benchee.run(
 ...>   %{
-...>     "fib by elixir" => fn -> FibByElixir.fib(40) end,
-...>     "fib by rust"   => fn -> FibByRust.fib(40) end
+...>     "fib by elixir" => fn -> Fib.ByElixir.fib(40) end,
+...>     "fib by rust"   => fn -> Fib.ByRust.fib(40) end
 ...>   },
 ...>   time: 10,
 ...>   formatters: [{Benchee.Formatters.Console, extended_statistics: true}]
@@ -29,18 +29,18 @@ Benchmarking fib by elixir ...
 Benchmarking fib by rust ...
 
 Name                    ips        average  deviation         median         99th %
-fib by rust            1.17         0.86 s     ±1.92%         0.86 s         0.88 s
-fib by elixir          0.79         1.27 s     ±1.82%         1.26 s         1.32 s
+fib by rust            1.19         0.84 s     ±2.05%         0.84 s         0.88 s
+fib by elixir          0.77         1.30 s     ±1.87%         1.30 s         1.32 s
 
 Comparison:
-fib by rust            1.17
-fib by elixir          0.79 - 1.47x slower +0.41 s
+fib by rust            1.19
+fib by elixir          0.77 - 1.54x slower +0.45 s
 
 Extended statistics:
 
 Name                  minimum        maximum    sample size                     mode
-fib by rust            0.84 s         0.88 s             12                     None
-fib by elixir          1.25 s         1.32 s              8                     None
+fib by rust            0.82 s         0.88 s             12                     None
+fib by elixir          1.27 s         1.32 s              8                     None
 ```
 
 ## REF

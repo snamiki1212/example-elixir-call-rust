@@ -7,4 +7,4 @@ fn fib(num: i64) -> i64 {
     }
 }
 
-rustler::init!("Elixir.FibByRust", [fib]);
+rustler::init!("Elixir.Fib.ByRust", [fib]);

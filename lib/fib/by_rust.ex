@@ -1,4 +1,4 @@
-defmodule FibByRust do
+defmodule Fib.ByRust do
   use Rustler, otp_app: :example_elixir_call_rust, crate: "fib"
 
   # When your NIF is loaded, it will override this function.

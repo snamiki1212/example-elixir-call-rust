@@ -1,4 +1,4 @@
-defmodule FibByElixir do
+defmodule Fib.ByElixir do
   @doc """
   fib by Elixir without memoization and not Tail Call Optimization.
   """
