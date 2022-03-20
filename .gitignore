@@ -24,3 +24,6 @@ example_elixir_call_rust-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# rustler compiled modules.
+/priv/native/*
